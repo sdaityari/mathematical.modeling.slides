@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Mathematical Modeling - Introduction and Applications in Geology</title>
+
+        <meta name="description" content="An introduction to Mathematical Modeling and applications in Geology">
+        <meta name="author" content="Shaumik Daityair">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1>Mathematical Modeling</h1>
+                    <h3>Introduction and Applicaions in Geology</h3>
+                    <p>
+                        <small>
+                            <a href="https://github.com/sdaityari">Shaumik Daityari</a> / <a href="http://twitter.com/ds_mik">@ds_mik</a><br />
+                            <a href="http://sdaityari.github.io/mathematical.modeling.slides">http://sdaityari.github.io/mathematical.modeling.slides</a>
+                        </small>
+                    </p>
+                </section>
+
+                <!-- Introduction -->
+                <section>
+                    <h2>What is this all about?</h2>
+                    <ul>
+                        <li class="fragment roll-in">Representing a system in terms of the language and concepts of mathematics</li>
+                        <li class="fragment roll-in">Statistical Models, Differential Equations, Dynamic Programming, Game Theory</li>
+                        <li class="fragment roll-in">Tic Tac Toe machine player</li>
+                        <li class="fragment roll-in">Weather Predictions</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>The Process</h2>
+                        <ul>
+                            <li class="fragment roll-in">Understand the problem</li>
+                            <li class="fragment roll-in">Formulate the problem</li>
+                            <li class="fragment roll-in">Design an algorithm</li>
+                            <li class="fragment roll-in">Implement the algorithm</li>
+                            <li class="fragment roll-in">Run the program - did it solve the problem?</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Understand the problem</h2>
+                            <ul>
+                                <li class="fragment roll-in">Description of the problem</li>
+                                <li class="fragment roll-in">The inputs that would be provided</li>
+                                <li class="fragment roll-in">The expected output</li>
+                                <li class="fragment roll-in">Describe the problem on paper</li>
+                                <li class="fragment roll-in">Solve a few test cases</li>
+                                <li class="fragment roll-in">Decide boundary cases</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Formulate the problem</h2>
+                            <ul>
+                                <li class="fragment roll-in">Translating from mathematical language to a computer language</li>
+                                <li class="fragment roll-in">How will you store the input</li>
+                                <li class="fragment roll-in">How will you convert the input and arrive at the output</li>
+                                <li class="fragment roll-in">How will you display and present the output</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Design an algorithm</h2>
+                            <ul>
+                                <li class="fragment roll-in">Decide algorithm design (like Divide and Conquer, Greedy)</li>
+                                <li class="fragment roll-in">Decide data structures to be used</li>
+                                <li class="fragment roll-in">Analyze the efficiency of the algorithm - in terms of time and space</li>
+                                <li class="fragment roll-in">If an algorithm is difficult to implement, what approximations do we use?</li>
+                                <li class="fragment roll-in">Correctness - do all test cases pass?</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Implement the algorithm</h2>
+                            <ul>
+                                <li class="fragment roll-in">Translate the algorithm to a program</li>
+                                <li class="fragment roll-in">Select and code in a computer language</li>
+                                <li class="fragment roll-in">Algorithm may be efficient, but its implementation may be highly inefficient</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Run the program - did it solve the problem?</h2>
+                            <ul>
+                                <li class="fragment roll-in">Do test cases pass?</li>
+                                <li class="fragment roll-in">Are boundary conditions satisfied?</li>
+                                <li class="fragment roll-in">Is it as efficient as expected?</li>
+                                <li class="fragment roll-in">Does it solve the original problem?</li>
+                            </ul>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>Kinematic Analytics of Viscous Flows through Confined Narrow Zones</h2>
+                    </section>
+
+                    <section>
+                        <h2>Understand the problem</h2>
+                            <ul>
+                                <li class="fragment roll-in">In a deformation zone, there are three types of stresses that act on a control volume</li>
+                                <li class="fragment roll-in">A lateral pressure</li>
+                                <li class="fragment roll-in">Wall perpendicular compression</li>
+                                <li class="fragment roll-in">Wall parallel shearing</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Boundary Conditions</h2>
+                        <img src="images/all.jpg" />
+                    </section>
+
+                    <section>
+                        <h2>Formulate the problem</h2>
+                            <ul>
+                                <li class="fragment roll-in">Using the Navier Stokes’ equations, we arrive at the final equation</li>
+                                Final equation image
+                                <li class="fragment roll-in">Important assumption - this equation is time independent</li>
+                                <li class="fragment roll-in">Consider a material point inside the control volume and iterate it over small time periods</li>
+                                <li class="fragment roll-in">Trace the movement or record the final position of this material point</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Design an algorithm</h2>
+                            <ul>
+                                <li class="fragment roll-in">Fairly simple</li>
+                                <li class="fragment roll-in">To trace movement of material points, trace the change in positions as you iterate over time.</li>
+                                <li class="fragment roll-in">For strain ellipses, create circles and trave the movement of each point on the circle</li>
+                                <li class="fragment roll-in">Plot these on a graph representing a cross section of the intial control volume</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Implement the algorithm for trace</h2>
+                        <pre>
+                            <code data-trim>
+# Assume an initial point p
+p = (x, y)
+dt = 1 year
+trace = []
+for i in range(1000):
+    p[0] += u(at x = p[0], y = p[1]) * dt
+    p[1] += v(at x = p[0], y = p[1]) * dt
+    trace.append(p)
+# plot trace
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <img src="images/material_trace_all.jpg" />
+                    </section>
+
+                    <section>
+                        <h2>Implement the algorithm for strain ellipse</h2>
+                        <pre>
+                            <code data-trim>
+# For a circle with center (h, k) and radius r
+center = (h, k)
+circumference = [(h + r * cos(θ), k + r * sin (θ)) for θ in range(360)]
+dt = 1 year
+strain_ellipse = []
+for point in circumference:
+    for i in range(1000):
+        point[0] += u(at x = point[0], y = point[1]) * dt
+        point[1] += v(at x = point[0], y = point[1]) * dt
+    strain_ellipse.append(point) # Appending the final state of material point
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <img src="images/SE_all.jpg" />
+                    </section>
+
+                    <section>
+                        <h2>Run the program - did it solve the problem?</h2>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>Pattern Recognition in Remote Sensing Images</h2>
+                    </section>
+
+                    <section>
+                        <h2>Understand the problem</h2>
+                            <ul>
+                                <li class="fragment roll-in">Images that we receive from satellites are raster images; they consist of pixels</li>
+                                <li class="fragment roll-in">Pixel is a picture element, which contains a color value and a brightness value</li>
+                                <li class="fragment roll-in">Patterns are a group of similar pixels</li>
+                                <li class="fragment roll-in">Essentially clustering of pixels which are similar to each other</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Formulate the problem</h2>
+                            <ul>
+                                <li class="fragment roll-in">Two ways of clustering points</li>
+                                <li class="fragment roll-in">Hierarchical Clustering</li>
+                                <li class="fragment roll-in">K-means Clustering</li>
+                                <li class="fragment roll-in">Use either of them to cluster pixels</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Hierarchical Clustering</h2>
+                            <ul>
+                                <li class="fragment roll-in">Input: A set P of points, and a number of clusters k</li>
+                                <li class="fragment roll-in">Initialization: Put each point in a cluster by itself</li>
+                                <li class="fragment roll-in">Find two closest clusters and merge them into one</li>
+                                <li class="fragment roll-in">Repeat until k clusters</li>
+                                <li class="fragment roll-in">How do we find the two closest clusters?</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <img src="images/initial1.png">
+                    </section>
+
+                    <section>
+                        <img src="images/hc1.png">
+                    </section>
+
+                    <section>
+                        <img src="images/hc2.png">
+                    </section>
+
+                    <section>
+                        <img src="images/hc3.png">
+                    </section>
+
+                    <section>
+                        <img src="images/hc4.png">
+                    </section>
+
+                    <section>
+                        <h2>K-means Clustering</h2>
+                            <ul>
+                                <li class="fragment roll-in">Input: A set P of points, a number of clusters k, and a number of iterations q</li>
+                                <li class="fragment roll-in">Initialize k centers</li>
+                                <li class="fragment roll-in">Initialize k empty clusters</li>
+                                <li class="fragment roll-in">For each point, add it to the cluster closest</li>
+                                <li class="fragment roll-in">Recompute the cluster's center</li>
+                                <li class="fragment roll-in">Repeat q times</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <img src="images/initial1.png">
+                    </section>
+
+                    <section>
+                        <img src="images/km1.png">
+                    </section>
+
+                    <section>
+                        <img src="images/km2.png">
+                    </section>
+
+                    <section>
+                        <img src="images/km3.png">
+                    </section>
+
+                    <section>
+                        <img src="images/km4.png">
+                    </section>
+
+                    <section>
+                        <h2>Implement the algorithm</h2>
+                        <h3>Defining a Cluster class</h3>
+                        <pre>
+                            <code data-trim>
+class Cluster():
+    def __init__(self, points, center = None):
+        self.points = points
+        self.center = ... #Compute the center from the list of points
+        # or use initial value provided for empty cluster
+
+    def distance(self, Cluster):
+        # compute distance of one cluster from another cluster
+
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <h2>Implement the algorithm</h2>
+                        <h3>Hierarchical Clustering</h3>
+                        <pre>
+                            <code data-trim>
+def hierarchical_clustering(cluster_list, num_clusters):
+    """
+    Compute a hierarchical clustering of a set of clusters
+    Note: the function mutates cluster_list
+
+    Input: List of clusters, number of clusters
+    Output: List of clusters whose length is num_clusters
+    """
+    new_cluster_list = cluster_list[:]
+
+    while len(new_cluster_list) > num_clusters:
+        _, node1, node2 = fast_closest_pair(new_cluster_list)
+        new_cluster_list[node1].merge_clusters(new_cluster_list[node2])
+        del new_cluster_list[node2]
+
+    return new_cluster_list
+
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <h2>Implement the algorithm</h2>
+                        <h3>k-means Clustering</h3>
+                        <pre>
+                            <code data-trim>
+def kmeans_clustering(cluster_list, num_clusters, num_iterations):
+    cluster_n = len(cluster_list)
+
+    miu_k = sorted(cluster_list,
+              key=lambda c: c.total_population())[-num_clusters:]
+    miu_k = [c.copy() for c in miu_k]
+
+    # n: cluster_n
+    # q: num_iterations
+    for _ in xrange(num_iterations):
+        cluster_result = [alg_cluster.Cluster(set([]), 0, 0, 0, 0) for _ in range(num_clusters)]
+        # put the node into closet center node
+
+        for jjj in xrange(cluster_n):
+            min_num_k = 0
+            min_dist_k = float('inf')
+            for num_k in xrange(len(miu_k)):
+                dist = cluster_list[jjj].distance(miu_k[num_k])
+                if dist < min_dist_k:
+                    min_dist_k = dist
+                    min_num_k = num_k
+
+            cluster_result[min_num_k].merge_clusters(cluster_list[jjj])
+
+        # re-computer its center node
+        for kkk in xrange(len(miu_k)):
+            miu_k[kkk] = cluster_result[kkk]
+
+    return cluster_result
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <h2>Run the program - did it solve the problem?</h2>
+                    </section>
+
+                    <section>
+                        <img src="images/kmeans.png">
+                        <small>Results of sequential K-Means, where K is two. (a) is the original image. (b) is one of its clusters and (c) is another cluster.</small>
+                        <small>&copy; Zhenhua, 2010</small>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h2>Final Thoughts</h2>
+                    <ul>
+                        <li class="fragment roll-in">Mathematical modeling is an essential tool</li>
+                        <li class="fragment roll-in">Algorithms are at the heart of Mathematical Modeling</li>
+                        <li class="fragment roll-in">Algorithm design and implementation is very important</li>
+                        <li class="fragment roll-in">You can't come up with program that take 10 years to run</li>
+                        <li class="fragment roll-in">Different Approaches give different results</li>
+                        <li class="fragment roll-in">k-means clustering gives jagged edges as compared to hierarchical clustering, which is smoother</li>
+                        <li class="fragment roll-in">Know your algorithms, solve problems with ease</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>References</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>THE END</h2>
+                    <p><img width="640" height="480" src="images/joker.jpg" alt="Joker with rainbow"></p>
+                    <p>Any questions?</p>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                parallaxBackgroundImage: 'images/parallax.jpg',
+                parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
